@@ -60,16 +60,16 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    while(round <= 5) {
+    for (let i = 0; i < 5; i++) {
         playRound();
-        console.log("This is round" + " " + round);
-        if (playerScore == 5) {
-            return "YOU WIN!";
+        if (playerScore <= 5) {
+            console.log("You Win!");
         }
-        else if (computerScore == 5) {
-            return "YOU LOSE";
-        } else {
-            return "Continue playing";
+        else if (computerScore <= 5) {
+            console.log("You Lose");
+        }
+        else {
+            console.log("Continue Playing");
         }
     }
 }
