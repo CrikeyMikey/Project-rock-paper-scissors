@@ -21,7 +21,7 @@ let computerScore = 0;
 let round = 0;
 
 //Plays a round of Rock, Paper, Scissors.
-function playRound(playerSelection, computerSelection) {
+function playRound() {
     const computerSelection = computerChoice();
     const playerSelection = playerChoice();
     //if statement that will compare the choices given by the player and CPU
@@ -60,13 +60,13 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(playerSelection, computerSelection);
-        if (playerScore <= 5) {
-            console.log("You Win!");
+    while (playerScore < 5 || computerScore < 5) {
+        playRound();
+        if (playerScore >= 5) {
+            console.log("You Win! you have beaten the machine!");
         }
-        else if (computerScore <= 5) {
-            console.log("You Lose");
+        else if (computerScore >= 5) {
+            console.log("You Lose! the machine won");
         }
         else {
             console.log("Continue Playing");
