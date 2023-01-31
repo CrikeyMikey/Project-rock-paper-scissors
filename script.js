@@ -15,8 +15,6 @@ function playerChoice() {
     let choice = prompt("Choose from rock, paper, or scissors");
     return choice.toUpperCase();
 }
-const computerSelection = computerChoice();
-const playerSelection = playerChoice();
 
 let playerScore = 0;
 let computerScore = 0;
@@ -24,6 +22,8 @@ let round = 0;
 
 //Plays a round of Rock, Paper, Scissors.
 function playRound(playerSelection, computerSelection) {
+    const computerSelection = computerChoice();
+    const playerSelection = playerChoice();
     //if statement that will compare the choices given by the player and CPU
     if (playerSelection == "ROCK" && computerSelection == "PAPER") {
         computerScore++;
@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        playRound();
+        playRound(playerSelection, computerSelection);
         if (playerScore <= 5) {
             console.log("You Win!");
         }
