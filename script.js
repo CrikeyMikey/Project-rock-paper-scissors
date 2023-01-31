@@ -1,4 +1,4 @@
-//Generates a random number between 1-3 and chooses a RPS choice based on the number
+//Generates the computers choice using random number generation
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     //A switch case statement could probably be used here as well but an if statement came to mind first
@@ -14,9 +14,9 @@ function getComputerChoice() {
 }
 
 //Used to log the players choice of either rock, paper, or scissors
-
 let input = prompt("Enter your choice here");
 
 function getPlayerChoice() {
     return toUpperCase(input);
 }
+
