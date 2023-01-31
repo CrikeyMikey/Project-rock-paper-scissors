@@ -11,21 +11,24 @@ function computerChoice() {
     }
 }
 
+//Initializes a prompt in the browser to get the users choice
 function playerChoice() {
     let choice = prompt("Choose from rock, paper, or scissors");
     return choice.toUpperCase();
 }
 
+//variables for the score of the player and the computer, plus the round number
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
 
-//Plays a round of Rock, Paper, Scissors.
+//Plays a round of Rock, Paper, Scissors, calls the choice variables and runs them through a gauntlet of if statements
 function playRound() {
     const computerSelection = computerChoice();
     const playerSelection = playerChoice();
     //if statement that will compare the choices given by the player and CPU
     if (playerSelection == "ROCK" && computerSelection == "PAPER") {
+        //in each statement the score and round number is updated accordingly
         computerScore++;
         round++;
         console.log("You Lose! rock beats paper");
@@ -59,9 +62,12 @@ function playRound() {
     }
 }
 
+//primary game function which will run through the round function until either the player or computer score reaches 5
 function game() {
     while (playerScore < 5 || computerScore < 5) {
+        //calls the round function which gathers the player and CPU choices
         playRound();
+        //if the scores of either the player or CPU reach 5 halt execution and display one of 2 messages
         if (playerScore >= 5) {
             console.log("You Win! you have beaten the machine!");
         }
