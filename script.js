@@ -69,10 +69,10 @@ function game() {
         playRound();
         //if the scores of either the player or CPU reach 5 halt execution and display one of 2 messages
         if (playerScore >= 5) {
-            console.log("You Win! you have beaten the machine!");
+            return("You Win! you have beaten the machine!");
         }
         else if (computerScore >= 5) {
-            console.log("You Lose! the machine won");
+            return("You Lose! the machine won");
         }
         else {
             console.log("Continue Playing");
