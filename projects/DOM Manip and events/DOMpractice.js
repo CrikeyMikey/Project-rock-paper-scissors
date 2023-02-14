@@ -34,3 +34,7 @@ content5.classList.add('p2');
 content5.textContent = "ME TOO!";
 container2.appendChild(content5);
 
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue'; 
+});
+
