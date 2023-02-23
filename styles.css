@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gamebox {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rockbtn, #paperbtn, #scissorsbtn {
+    height: 2em;
+    width: 7em;
+}
+
+.playerScore, .computerScore, .roundResult {
+    font-size: 10px;
+    color: white;
+}
