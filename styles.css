@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-#rockbtn, #paperbtn, #scissorsbtn {
+.btn {
     height: 2em;
     width: 7em;
 }

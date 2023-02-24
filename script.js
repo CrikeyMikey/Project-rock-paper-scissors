@@ -20,7 +20,6 @@ function playerChoice() {
 //variables for the score of the player and the computer, plus the round number
 let playerScore = 0;
 let computerScore = 0;
-let round = 0;
 
 //Plays a round of Rock, Paper, Scissors, calls the choice variables and runs them through a gauntlet of if statements
 function playRound() {
