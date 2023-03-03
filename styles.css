@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
 
 p {
@@ -16,14 +17,18 @@ p {
 }
 
 h2 {
-    color: goldenrod;
+    color: cyan;
+    text-shadow: 0 0 3px lightblue;
 }
 
 button {
-    color: goldenrod;
+    color: skyblue;
     background-color: black;
     border-radius: 6px;
-    border: solid 2px gold
+    border: solid 2px skyblue;
+    text-shadow: 0 0 2px cyan;
+    box-shadow: 0 0 0.3rem cyan;
+    margin: 2px;
 }
 
 .rock, .paper, .scissors {
@@ -37,16 +42,18 @@ button {
     font-size: 20px;
     justify-content: space-around;
     padding: 10px;
-    color: white;
+    color: cyan;
     gap: 24px;
-    -webkit-text-stroke: 0.5px gold;
+    text-shadow: 0 0 12px skyblue;
 }
 
 .gameboard {
     border-radius: 12px;
     padding: 16px;
     background-color: black;
+    border: 3px skyblue solid;
     display:flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 3rem cyan;
 }
